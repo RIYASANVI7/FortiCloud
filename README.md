@@ -96,11 +96,7 @@ The [`dataform` folder](./dataform/) contains the Dataform repo to automate depl
 
 The [`cicd` folder](./cicd/) contains a set of scripts to help you with storing CSA YARA-L detection rules as code and testing/deploying updates you and your team make in an automated fashion. Whether you use GitHub Actions, Google Cloud Build or Azure DevOps, you can use the corresponding scripts to automatically test and deploy new or modified rules into your Google Security Operations instance. See underlying [README](./cicd/README.md) for more details.
 
-## Support
-
-This is not an officially supported Google product. Queries, rules and other assets in Community Security Analytics (CSA) are community-supported. Please don't hesitate to [open a GitHub issue](https://github.com/GoogleCloudPlatform/security-analytics/issues) if you have any question or a feature request.
-
-Contributions are also welcome via [Github pull requests](https://github.com/GoogleCloudPlatform/security-analytics/pulls) if you have fixes or enhancements to source code or docs. Please refer to our [Contributing guidelines](./CONTRIBUTING.md).
+ 
 
 ## Copyright & License
 
