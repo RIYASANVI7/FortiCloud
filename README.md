@@ -98,8 +98,4 @@ The [`cicd` folder](./cicd/) contains a set of scripts to help you with storing 
 
  
 
-## Copyright & License
-
-Copyright 2022 Google LLC
-
-Queries, rules and other assets under Community Security Analytics (CSA) are licensed under the Apache license, v2.0. Details can be found in [LICENSE](./LICENSE) file.
+ 
