@@ -1,7 +1,5 @@
-# FortCloud
-<p align="center">
-  <img src="./assets/csa_logo.png" alt="Community Security Analytics Logo">
-</p>
+# FortiCloud
+ 
 
  As organizations increasingly adopt cloud computing for its scalability and flexibility, the
 need to ensure robust security in multi-tenant environments becomes paramount. The
@@ -96,6 +94,13 @@ The potential security use cases below are grouped in 6 categories depending on 
 | 6.31| [Traffic sessions of high severity threats detected by Cloud IDS](./src/6.31/6.31.md)| Cloud IDS Threat Logs, Cloud IDS Traffic Logs| | :white_check_mark:| [T1071](https://attack.mitre.org/techniques/T1071/ "Application Layer Protocol") |
 | 6.40| [Top 10 DNS queried domains](./src/6.40/6.40.md)| Cloud DNS Logs| :white_check_mark:| :white_check_mark:| [T1071.004](https://attack.mitre.org/techniques/T1071/004/ "Command and Scripting Interpreter (Unix Shell)") |
 
-  Methodology:
-Risk Assessment: Conduct a thorough analysis of potential security risks and threats
-associated with multi-tenancy in GCP environments.
+The documentation of the risk assessment,security analysis and architectural design of multi-tenancy in gcp environments is shared below:
+   https://medium.com/@riyasanvi2002/forticloud-b46224aebd4e
+
+
+   To Sum Up Multi-tenant Architecture:
+The adoption of multi-tenant architecture (MTA) for cloud apps presents a transformative opportunity for businesses seeking to harness the power of cloud computing. By allowing multiple tenants to share the same infrastructure, applications, and databases, MTA offers a cost-effective, scalable, and flexible solution that can accommodate the evolving needs of a diverse user base.
+
+As cloud technology continues to advance, we can expect even more sophisticated security measures to emerge, further enhancing the appeal of multi-tenant architecture.
+
+The adoption of multi-tenant architecture for cloud apps represents a strategic move for businesses aiming to stay competitive in the digital age. It offers a pathway to increased efficiency, agility, and innovation, enabling organizations to deliver high-quality services while maintaining control over their costs and resources. 
