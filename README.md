@@ -1,18 +1,26 @@
-# Community Security Analytics (CSA)
+# FortCloud
 <p align="center">
   <img src="./assets/csa_logo.png" alt="Community Security Analytics Logo">
 </p>
 
-As organizations go through the Autonomic Security modernization journey, this repository serves as a community-driven list of sample security analytics for auditing cloud usage and for detecting threats to your data &amp; workloads in Google Cloud. These may assist **detection engineers**, **threat hunters** and **data governance analysts**.
-
-CSA is a set of foundational security analytics designed to provide organizations with a rich baseline of pre-built queries and rules that they can readily use to start analyzing their Google Cloud logs including Cloud Audit logs, VPC Flow logs, DNS logs, and more using cloud-native or third-party analytics tools. The source code is provided as is, without warranty. See [Copyright & License](#copyright--license) below.
+ As organizations increasingly adopt cloud computing for its scalability and flexibility, the
+need to ensure robust security in multi-tenant environments becomes paramount. The
+"FortiCloud" project aims to address this challenge by investigating and implementing
+strategies for enhancing security, isolation, and access control within the Google Cloud
+Platform (GCP). By leveraging innovative approaches and technologies, FortiCloud
+endeavors to provide comprehensive solutions that safeguard the confidentiality,
+integrity, and availability of data and resources in multi-tenant GCP environments.
+Through a combination of rigorous analysis, experimentation, and implementation, this
+project seeks to contribute valuable insights and best practices to the broader
+cybersecurity community, enabling organizations to confidently embrace cloud
+computing while minimizing security risks.
 
 Current release include:
 - YARA-L rules for [Google Security Operations](https://chronicle.security/)
 - SQL queries for [BigQuery](https://cloud.google.com/bigquery/)
 - SQL queries for [Log Analytics](https://cloud.google.com/logging/docs/log-analytics)
 
-The security use cases below are grouped in 6 categories depending on underlying activity type and log sources:
+The potential security use cases below are grouped in 6 categories depending on underlying activity type and log sources:
 
 1. :vertical_traffic_light: [Login & Access Patterns](#login-access-patterns)
 2. :key: [IAM, Keys & Secrets Admin Activity](#iam-keys-secrets-changes)
@@ -21,9 +29,9 @@ The security use cases below are grouped in 6 categories depending on underlying
 5. :droplet: [Data Usage](#data-usage)
 6. :zap: [Network Activity](#network-activity)
 
-To learn more about the variety of Google Cloud logs, how to enable and natively export these logs to destinations like BigQuery or Google Security Operations for in-depth analytics, refer to Google Cloud [Security and access analytics solution guide](https://cloud.google.com/architecture/exporting-stackdriver-logging-for-security-and-access-analytics).
+ 
 
-**Caution:** CSA is not meant to be a comprehensive set of threat detections, but a collection of community-contributed samples to get you started with detective controls. Use CSA in your threat detection and response capabilities (e.g. [Security Command Center](https://cloud.google.com/security-command-center), [Google Security Operations](https://cloud.google.com/security/products/security-operations), [BigQuery](https://cloud.google.com/bigquery/), or third-party SIEM) in conjunction with threat prevention capabilities (e.g. [Security Command Center](https://cloud.google.com/security-command-center), [Cloud Armor](https://cloud.google.com/armor), [Identity-Aware Proxy](https://cloud.google.com/security/products/iap) and [Chrome Enterprise Premium](https://chromeenterprise.google/products/chrome-enterprise-premium)). To learn more about Google’s approach to modern Security Operations, check out the [Autonomic Security Operations whitepaper](https://services.google.com/fh/files/misc/googlecloud_autonomicsecurityoperations_soc10x.pdf).
+ 
 
 ## Security Analytics Use Cases
 ![Security Monitoring](./assets/gcp_security_mon.png)
@@ -88,14 +96,6 @@ To learn more about the variety of Google Cloud logs, how to enable and natively
 | 6.31| [Traffic sessions of high severity threats detected by Cloud IDS](./src/6.31/6.31.md)| Cloud IDS Threat Logs, Cloud IDS Traffic Logs| | :white_check_mark:| [T1071](https://attack.mitre.org/techniques/T1071/ "Application Layer Protocol") |
 | 6.40| [Top 10 DNS queried domains](./src/6.40/6.40.md)| Cloud DNS Logs| :white_check_mark:| :white_check_mark:| [T1071.004](https://attack.mitre.org/techniques/T1071/004/ "Command and Scripting Interpreter (Unix Shell)") |
 
-## Dataform for CSA on BigQuery
-
-The [`dataform` folder](./dataform/) contains the Dataform repo to automate deployment of CSA queries in BigQuery for optimized performance and cost. Use this Dataform repo to operationalize CSA use cases as reports and alerts powered by BigQuery. This Dataform project deploys and orchestrates pre-built ELT pipelines to filter, normalize and model log data leveraging incremental summary tables, lookup tables and views for fast, cost-effective and simpler querying. See underlying [README](./dataform/README.md) for more details.
-
-## CI/CD for CSA on Google Security Operations
-
-The [`cicd` folder](./cicd/) contains a set of scripts to help you with storing CSA YARA-L detection rules as code and testing/deploying updates you and your team make in an automated fashion. Whether you use GitHub Actions, Google Cloud Build or Azure DevOps, you can use the corresponding scripts to automatically test and deploy new or modified rules into your Google Security Operations instance. See underlying [README](./cicd/README.md) for more details.
-
- 
-
- 
+  Methodology:
+Risk Assessment: Conduct a thorough analysis of potential security risks and threats
+associated with multi-tenancy in GCP environments.
